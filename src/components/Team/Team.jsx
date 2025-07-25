@@ -1,10 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import image1 from '../../assets/img/team-1.jpg'
-import image2 from '../../assets/img/team-2.jpg'
-import image3 from '../../assets/img/team-3.jpg'
-import image4 from '../../assets/img/team-4.jpg'
+import image1 from '../../assets/img/team-1.png'
+import image2 from '../../assets/img/team-2.png'
+import image3 from '../../assets/img/team-3.png'
+import image4 from '../../assets/img/team-4.png'
 import TeamCard from '../TeamCard/TeamCard';
 import './Team.css';
 

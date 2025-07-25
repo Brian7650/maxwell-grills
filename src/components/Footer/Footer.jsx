@@ -22,8 +22,8 @@ const Footer = () => {
 
                     <div className="col-lg-3 col-md-6">
                         <h4 className="section-title text-start fw-normal mb-4 cursive-text">Contact</h4>
-                        <p className="mb-2"> <FontAwesomeIcon className="fa fa-map-marker-alt me-3"  icon={faLocationDot} />123 Street, New York, USA</p>
-                        <p className="mb-2"> <FontAwesomeIcon className="fa fa-map-marker-alt me-3"  icon={faPhone} />+012 345 67890</p>
+                        <p className="mb-2"> <FontAwesomeIcon className="fa fa-map-marker-alt me-3"  icon={faLocationDot} />123 Street, Toronto, Canada</p>
+                        <p className="mb-2"> <FontAwesomeIcon className="fa fa-map-marker-alt me-3"  icon={faPhone} />+416 345 67890</p>
                         <p className="mb-2"> <FontAwesomeIcon className="fa fa-map-marker-alt me-3"  icon={faEnvelope}/>info@example.com</p>
 
                         <div className="d-flex pt-2">
@@ -39,7 +39,7 @@ const Footer = () => {
                         <h5 className="text-light fw-normal">Monday - Saturday</h5>
                         <p>09AM - 09PM</p>
                         <h5 className="text-light fw-normal">Sunday</h5>
-                        <p>10AM - 08PM</p>
+                        <p>11AM - 06PM</p>
                     </div>
 
                     <div className="col-lg-3 col-md-6">
@@ -58,9 +58,8 @@ const Footer = () => {
                 <div className="copyright">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                            Designed By <a className="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br /><br />
-                            Distributed By <a className="border-bottom" href="https://themewagon.com" target="_blank" rel="noopener noreferrer">ThemeWagon</a>
+                            &copy; <a className="border-bottom" href="#">Maxwell Grills</a>, All Right Reserved.
+                            Designed By <a className="border-bottom" href="https://brian-portfolio-3-0.onrender.com/">Brian Bartley</a><br /><br />
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">

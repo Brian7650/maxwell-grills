@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import aboutOne from '../../assets/img/about-1.jpg'
-import aboutTwo from "../../assets/img/about-2.jpg"
-import aboutThree from "../../assets/img/about-3.jpg"
-import aboutFour from "../../assets/img/about-4.jpg"
+import aboutOne from '../../assets/img/about-1-1.webp'
+import aboutTwo from "../../assets/img/about-2-2.webp"
+import aboutThree from "../../assets/img/about-3-1.webp"
+import aboutFour from "../../assets/img/about-4-1.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 import './About.css'
@@ -16,7 +16,7 @@ function About() {
     useEffect(() => {
         const countYears = () => {
             let start = 0;
-            const end = 15;
+            const end = 20;
             const duration = 3000; 
             const stepTime = Math.abs(Math.floor(duration / end));
 
@@ -32,7 +32,7 @@ function About() {
         
         const countPopular = () => {
             let start = 0;
-            const end = 50;
+            const end = 35;
             const duration = 3000; 
             const stepTime = Math.abs(Math.floor(duration / end));
 
