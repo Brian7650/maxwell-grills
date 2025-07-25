@@ -1,0 +1,17 @@
+.form-control:focus,
+.form-floating input:focus,
+.form-floating textarea:focus {
+  border-color: #ff6347; 
+  box-shadow: 0 0 0 0.2rem rgb(255, 231, 197);
+  outline: none;
+}
+
+.contact-section p{
+    color: #666565;
+
+}
+
+.contact-section .contact-icon{
+    color: var(--primary);
+
+}

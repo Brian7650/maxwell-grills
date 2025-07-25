@@ -1,0 +1,24 @@
+.service-card {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-card:hover {
+    background: var(--primary);
+}
+
+.service-card * {
+    transition: .5s;
+}
+
+.service-card  p {
+   color: #666565 !important;
+}
+
+.service-card:hover * {
+    color: var(--light) !important;
+}
+
+.icon {
+    color: var(--primary);
+}

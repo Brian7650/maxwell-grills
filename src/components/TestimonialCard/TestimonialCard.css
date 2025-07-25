@@ -1,0 +1,7 @@
+.testimonial-item .fa-3x{
+    color: var(--primary);
+}
+
+.testimonial-item .test-text{
+    color: #666565 !important;
+}

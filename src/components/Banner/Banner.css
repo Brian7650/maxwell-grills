@@ -1,0 +1,23 @@
+.hero_section {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../../img/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero_section h1,
+.hero_section p {
+    color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+
+.breadcrumb .breadcrumb-item a {
+    color: var(--primary);
+    text-decoration: none !important;
+}
+

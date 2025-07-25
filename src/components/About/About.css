@@ -1,0 +1,11 @@
+.about-section .about-icon {
+    color: var(--primary) !important;
+}
+
+.about-section .about-text p {
+    color: #666565 !important;
+}
+
+.about-section .about-text .about-border {
+    border-color: var(--primary) !important;
+}
