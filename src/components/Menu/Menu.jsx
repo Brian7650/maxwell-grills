@@ -7,6 +7,10 @@ import image5 from "../../assets/img/menu-5.webp"
 import image6 from "../../assets/img/menu-6.jpg"
 import image7 from "../../assets/img/menu-7.jpg"
 import image8 from "../../assets/img/menu-8.jpg"
+import image9 from "../../assets/img/menu-9.webp"
+import image10 from "../../assets/img/menu-10.webp"
+import image11 from "../../assets/img/menu-11.webp"
+import image12 from "../../assets/img/menu-12.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBurger, faMugSaucer ,faUtensils} from '@fortawesome/free-solid-svg-icons';
 import './Menu.css';
@@ -20,16 +24,24 @@ const items = [
     { id: 5, name: 'Chicken Burger Meal', price: '$15', image: image5 },
     { id: 6, name: 'Salmon Meal', price: '$25', image: image6 },
     { id: 7, name: 'Pizza', price: '$25', image: image7 },
-    { id: 8, name: 'Chicken Burger', price: '$115', image: image8 }
+    { id: 8, name: 'Chicken Burger', price: '$115', image: image8 },
+    { id: 9, name: 'Egg Sandwich', price: '$6', image: image9 },
+    { id: 10, name: 'Hotdog & Eggs', price: '$10', image: image10 },
+    { id: 11, name: 'Muffins', price: '$5', image: image11 },
+    { id: 12, name: 'Pancakes', price: '$10', image: image12 },
+    // { id: 5, name: 'Chicken Burger Meal', price: '$15', image: image5 },
+    // { id: 6, name: 'Salmon Meal', price: '$25', image: image6 },
+    // { id: 7, name: 'Pizza', price: '$25', image: image7 },
+    // { id: 8, name: 'Chicken Burger', price: '$115', image: image8 }
   ];
   
   const Menu = () => {
   const [activeTab, setActiveTab] = useState('breakfast');
 
   const filteredItems = {
-    breakfast: items.slice(0, 4),
-    lunch: items.slice(4, 6),
-    dinner: items.slice(6)
+    breakfast: items.slice(8, 12),
+    lunch: items.slice(0, 6),
+    dinner: items.slice(6, 7),
   };
 
   return (

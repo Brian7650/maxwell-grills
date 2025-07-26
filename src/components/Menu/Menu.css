@@ -1,51 +1,57 @@
-.menu-section{
+.menu-section {
   background-color: white !important;
 }
 
-
 .tab-container {
-    text-align: center;
-    padding: 20px;
-  }
-  .tab-class small{
-    color: #666565 !important;
-  
-  }
-  .tab-class .nav-item .d-flex{
-    text-decoration: none !important;
-  
-  }
-
-  
-  .menu-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .menu-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    
-  }
-  
- 
-  .menu-item span {
-    color: var(--dark);
-
-  }
-  .menu-item small {
-    color: #666565 !important;
-
-  }
-
-
-  .nav-pills .nav-item .active {
-    border-bottom: 2px solid var(--primary);
-    
+  text-align: center;
+  padding: 20px;
 }
 
+.tab-class small {
+  color: #666565 !important;
+}
+
+.tab-class .nav-item .d-flex {
+  text-decoration: none !important;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-item span {
+  color: var(--dark);
+}
+
+.menu-item small {
+  color: #666565 !important;
+}
+
+.nav-pills {
+  border-bottom: none !important;
+}
+
+.nav-pills .nav-item button {
+  border: none !important;
+  background: none !important;
+  outline: none !important;
+}
+
+.nav-pills .nav-item button:focus {
+  box-shadow: none !important;
+}
+
+.nav-pills .nav-item .active {
+  border-bottom: 2px solid var(--primary) !important;
+}
 
 .menu-item .menu-price {
   color: var(--primary);
@@ -53,10 +59,9 @@
 
 .nav-pills .nav-item .tab-text {
   color: black;
-  text-decoration: none !;
+  text-decoration: none;
 }
 
 .nav-pills .nav-item .tab-icon {
   color: var(--primary);
-
 }
