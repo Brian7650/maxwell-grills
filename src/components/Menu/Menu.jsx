@@ -6,16 +6,24 @@ import image4 from "../../assets/img/menu-4.webp"
 import image5 from "../../assets/img/menu-5.webp"
 import image6 from "../../assets/img/menu-6.jpg"
 import image7 from "../../assets/img/menu-7.jpg"
-import image8 from "../../assets/img/menu-8.jpg"
+import image8 from "../../assets/img/menu-8.webp"
 import image9 from "../../assets/img/menu-9.webp"
 import image10 from "../../assets/img/menu-10.webp"
 import image11 from "../../assets/img/menu-11.webp"
 import image12 from "../../assets/img/menu-12.webp"
+import image13 from "../../assets/img/menu-13.webp"
+import image14 from "../../assets/img/menu-14.webp"
+import image15 from "../../assets/img/menu-15.webp"
+import image16 from "../../assets/img/menu-16.webp"
+import image17 from "../../assets/img/menu-17.webp"
+import image18 from "../../assets/img/menu-18.webp"
+import image19 from "../../assets/img/menu-19.webp"
+import image20 from "../../assets/img/menu-20.webp"
+import image21 from "../../assets/img/menu-21.webp"
+import image22 from "../../assets/img/menu-22.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBurger, faMugSaucer ,faUtensils} from '@fortawesome/free-solid-svg-icons';
+import { faBurger, faMugSaucer, faIceCream, faBacon } from '@fortawesome/free-solid-svg-icons';
 import './Menu.css';
-
-
 const items = [
     { id: 1, name: 'Beef Salad', price: '$15', image: image1 },
     { id: 2, name: 'Chicken & Veggies', price: '$25', image: image2 },
@@ -24,15 +32,21 @@ const items = [
     { id: 5, name: 'Chicken Burger Meal', price: '$15', image: image5 },
     { id: 6, name: 'Salmon Meal', price: '$25', image: image6 },
     { id: 7, name: 'Pizza', price: '$25', image: image7 },
-    { id: 8, name: 'Chicken Burger', price: '$115', image: image8 },
+    { id: 8, name: 'Fish & Chips', price: '$15', image: image8 },
     { id: 9, name: 'Egg Sandwich', price: '$6', image: image9 },
     { id: 10, name: 'Hotdog & Eggs', price: '$10', image: image10 },
     { id: 11, name: 'Muffins', price: '$5', image: image11 },
     { id: 12, name: 'Pancakes', price: '$10', image: image12 },
-    // { id: 5, name: 'Chicken Burger Meal', price: '$15', image: image5 },
-    // { id: 6, name: 'Salmon Meal', price: '$25', image: image6 },
-    // { id: 7, name: 'Pizza', price: '$25', image: image7 },
-    // { id: 8, name: 'Chicken Burger', price: '$115', image: image8 }
+    { id: 13, name: 'Cheesecake', price: '$5', image: image13 },
+    { id: 14, name: 'Chocolate Cake', price: '$10', image: image14 },
+    { id: 15, name: 'Ice Cream', price: '$5', image: image15 },
+    { id: 16, name: 'Fruit Salad', price: '$10', image: image16 },
+    { id: 17, name: 'Coffee', price: '$3', image: image17 },
+    { id: 18, name: 'Water', price: '$2', image: image18 },
+    { id: 19, name: 'Tea', price: '$3', image: image19 },
+    { id: 20, name: 'Soda', price: '$2', image: image20 },
+    { id: 21, name: 'Juice', price: '$1', image: image21 },
+    { id: 22, name: 'Hot Chocolate', price: '$3', image: image22 },
   ];
   
   const Menu = () => {
@@ -40,8 +54,9 @@ const items = [
 
   const filteredItems = {
     breakfast: items.slice(8, 12),
-    lunch: items.slice(0, 6),
-    dinner: items.slice(6, 7),
+    meals: items.slice(0, 8),
+    dessert: items.slice(12, 16),
+    beverages: items.slice(16, 22),
   };
 
   return (
@@ -55,43 +70,59 @@ const items = [
 
           <div className="tab-class text-center animate__animated animate__fadeInUpBig" style={{ animationDelay: '0.2s' }}>
             <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
-              <li className="nav-item">
+              <li className="nav-item mx-3">  {/* Added mx-3 for consistent spacing */}
                 <button 
-                  className={`d-flex align-items-center text-start mx-3 ms-0 pb-3 ${activeTab === 'breakfast' ? 'active' : ''}`}
+                  className={`d-flex align-items-center text-start px-4 py-3 ${activeTab === 'breakfast' ? 'active' : ''}`}
                   onClick={() => setActiveTab('breakfast')}
                 >
-                  <FontAwesomeIcon className='fa-2x tab-icon' icon={faMugSaucer} />
-                  <div className="ps-3 menu-text">
+                  <FontAwesomeIcon className='fa-2x me-3' icon={faBacon} />  {/* Added me-3 for icon spacing */}
+                  <div className="ps-0 menu-text">  {/* Removed ps-3 since we have me-3 on icon */}
                     <small className="tab-text">Popular</small>
                     <h6 className="mt-n1 mb-0 tab-text">Breakfast</h6>
                   </div>
                 </button>
               </li>
-              <li className="nav-item">
+              
+              <li className="nav-item mx-3">
                 <button 
-                  className={`d-flex align-items-center text-start mx-3 me-0 pb-3 ${activeTab === 'lunch' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('lunch')}
+                  className={`d-flex align-items-center text-start px-4 py-3 ${activeTab === 'meals' ? 'active' : ''}`}
+                  onClick={() => setActiveTab('meals')}
                 >
-                  <FontAwesomeIcon className='fa-2x tab-icon' icon={faBurger} />
-                  <div className="ps-3">
+                  <FontAwesomeIcon className='fa-2x me-3' icon={faBurger} />
+                  <div className="ps-0">
                     <small className="tab-text">Special</small>
-                    <h6 className="mt-n1 mb-0 tab-text">Lunch</h6>
+                    <h6 className="mt-n1 mb-0 tab-text">Meals</h6>
                   </div>
                 </button>
               </li>
-              <li className="nav-item">
+              
+              <li className="nav-item mx-3">
                 <button 
-                  className={`d-flex align-items-center text-start mx-3 me-0 pb-3 ${activeTab === 'dinner' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('dinner')}
+                  className={`d-flex align-items-center text-start px-4 py-3 ${activeTab === 'dessert' ? 'active' : ''}`}
+                  onClick={() => setActiveTab('dessert')}
                 >
-                  <FontAwesomeIcon className='fa-2x tab-icon' icon={faUtensils} />
-                  <div className="ps-3">
+                  <FontAwesomeIcon className='fa-2x me-3' icon={faIceCream} />
+                  <div className="ps-0">
                     <small className="tab-text">Lovely</small>
-                    <h6 className="mt-n1 mb-0 tab-text">Dinner</h6>
+                    <h6 className="mt-n1 mb-0 tab-text">Dessert</h6>
+                  </div>
+                </button>
+              </li>
+
+              <li className="nav-item mx-3">
+                <button 
+                  className={`d-flex align-items-center text-start px-4 py-3 ${activeTab === 'beverages' ? 'active' : ''}`}
+                  onClick={() => setActiveTab('beverages')}
+                >
+                  <FontAwesomeIcon className='fa-2x me-3' icon={faMugSaucer} />
+                  <div className="ps-0 menu-text">
+                    <small className="tab-text">Popular</small>
+                    <h6 className="mt-n1 mb-0 tab-text">Beverages</h6>
                   </div>
                 </button>
               </li>
             </ul>
+          </div>
 
             <div className="menu-grid">
               {filteredItems[activeTab].map((item) => (
@@ -112,7 +143,6 @@ const items = [
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
