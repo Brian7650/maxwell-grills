@@ -15,7 +15,7 @@ const Booking = () => {
         <div className="col-md-6">
           <div className="video">
             <Button className="btn-play" onClick={() => {
-              setVideoSrc('https://www.youtube.com/embed/DWRcNpR6Kdc');
+              setVideoSrc('https://www.youtube.com/embed/BS38nAR43eg');
               handleShow();
             }}>
               <span></span>

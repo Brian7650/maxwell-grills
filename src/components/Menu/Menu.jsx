@@ -45,7 +45,7 @@ const items = [
     { id: 18, name: 'Water', price: '$2', image: image18 },
     { id: 19, name: 'Tea', price: '$3', image: image19 },
     { id: 20, name: 'Soda', price: '$2', image: image20 },
-    { id: 21, name: 'Juice', price: '$1', image: image21 },
+    { id: 21, name: 'Juice', price: '$4', image: image21 },
     { id: 22, name: 'Hot Chocolate', price: '$3', image: image22 },
   ];
   

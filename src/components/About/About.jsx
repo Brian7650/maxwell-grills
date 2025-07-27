@@ -4,7 +4,7 @@ import aboutTwo from "../../assets/img/about-2-2.webp"
 import aboutThree from "../../assets/img/about-3-1.webp"
 import aboutFour from "../../assets/img/about-4-1.webp"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faHamburger } from '@fortawesome/free-solid-svg-icons';
 import './About.css'
 
 
@@ -101,7 +101,7 @@ function About() {
 
                     <div className="col-lg-6 about-text">
                             <h5 className="section-title text-start fw-normal cursive-text">About Us</h5>
-                            <h1 className="mb-4">Welcome to <FontAwesomeIcon className="about-icon" icon={faUtensils} /> Restaurant</h1>
+                            <h1 className="mb-4">Welcome to <FontAwesomeIcon className="about-icon" icon={faHamburger} /> Maxwell Grills</h1>
                             <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
                             <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                         

@@ -1,8 +1,8 @@
 import React from 'react';
 import testimonial1 from '../../assets/img/testimonial-1.jpg'
-import testimonial2 from '../../assets/img/testimonial-2.jpg'
+import testimonial2 from '../../assets/img/testimonial-2.webp'
 import testimonial3 from '../../assets/img/testimonial-3.jpg'
-import testimonial4 from '../../assets/img/testimonial-4.jpg'
+import testimonial4 from '../../assets/img/testimonial-4.webp'
 import OwlCarousel from 'react-owl-carousel';
 import TestimonialCard from '../TestimonialCard/TestimonialCard';
 import 'owl.carousel/dist/assets/owl.carousel.css';
